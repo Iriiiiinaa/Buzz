@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Arimo-Regular";
+    src: url("../fonts/Arimo-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "ABC";
+    src: url("../fonts/ABCGravityCyrillic-Expanded-Trial.otf");
+    font-style: bold;
+    font-weight: bold;
+}
