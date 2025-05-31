@@ -934,3 +934,254 @@ a {
   line-height: 1.2vw;
   margin-top: 21.7vw;
 }
+.mistake{
+  position: absolute;
+  margin-left: 29vw;
+  margin-top: 16vw;
+  width: 40vw;
+}
+.picture1{
+  position: absolute;
+}
+.pic1{
+  position: absolute;
+  margin-left: 50.8vw;
+  margin-top: -0.5vw;
+  width: 15vw;
+  z-index: 1;
+}
+.pic2{
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 0vw;
+  width: 8.2vw;
+  z-index: 2;
+}
+.pic3{
+  position: absolute;
+  margin-left: 65vw;
+  margin-top: 4.8vw;
+  width: 17vw;
+  z-index: 2;
+}
+.pic4{
+  position: absolute;
+  margin-left: 76vw;
+  margin-top: 3.9vw;
+  width: 8.5vw;
+  z-index: 3;
+}
+.pic5{
+  position: absolute;
+  margin-left: 80vw;
+  margin-top: 11vw;
+  width: 16vw;
+  z-index: 2;
+}
+.pic6{
+  position: absolute;
+  margin-left: 89vw;
+  margin-top: 6vw;
+  width: 11vw;
+  z-index: 2;
+}
+.pic7{
+  position: absolute;
+  margin-left: 90vw;
+  margin-top: 18vw;
+  width: 10vw;
+  z-index: 7;
+}
+.pic8{
+  position: absolute;
+  margin-left: 81.5vw;
+  margin-top: 22vw;
+  width: 17vw;
+  z-index: 6;
+}
+.pic9{
+  position: absolute;
+  margin-left: 77vw;
+  margin-top: 28vw;
+  width: 20.5vw;
+  z-index: 5;
+}
+.pic10{
+  position: absolute;
+  margin-left: 74vw;
+  margin-top: 35vw;
+  width: 16vw;
+  z-index: 4;
+}
+.pic11{
+  position: absolute;
+  margin-left: 70vw;
+  margin-top: 33.5vw;
+  width: 12vw;
+  z-index: 3;
+}
+.pic12{
+  position: absolute;
+  margin-left: 77vw;
+  margin-top: 33vw;
+  width: 15vw;
+  z-index: 9;
+}
+.pic13{
+  position: absolute;
+  margin-left: 63vw;
+  margin-top: 43vw;
+  width: 19vw;
+  z-index: 3;
+}
+.pic14{
+  position: absolute;
+  margin-left: 60vw;
+  margin-top: 47vw;
+  width: 9vw;
+  z-index: 2;
+}
+.pic15{
+  position: absolute;
+  margin-left: 50vw;
+  margin-top: 45vw;
+  width: 15vw;
+  z-index: 1;
+}
+.pic16{
+  position: absolute;
+  margin-left: 42vw;
+  margin-top: 43vw;
+  width: 17vw;
+  z-index: 8;
+}
+.pic17{
+  position: absolute;
+  margin-left: 31.5vw;
+  margin-top: 44vw;
+  width: 13vw;
+  z-index: 7;
+}
+.pic18{
+  position: absolute;
+  margin-left: 14vw;
+  margin-top: 46.3vw;
+  width: 21vw;
+  z-index: 6;
+}
+.pic19{
+  position: absolute;
+  margin-left: 29vw;
+  margin-top: 40vw;
+  width: 9.5vw;
+  z-index: 6;
+}
+.pic20{
+  position: absolute;
+  margin-left: 24.5vw;
+  margin-top: 41vw;
+  width: 5.5vw;
+  z-index: 6;
+}
+.pic21{
+  position: absolute;
+  margin-left: 11vw;
+  margin-top: 38vw;
+  width: 17vw;
+  z-index: 5;
+}
+.pic22{
+  position: absolute;
+  margin-left: 8vw;
+  margin-top: 32vw;
+  width: 19vw;
+  z-index: 4;
+}
+.pic23{
+  position: absolute;
+  margin-left: 16.2vw;
+  margin-top: 25vw;
+  width: 8vw;
+  z-index: 4;
+}
+.pic24{
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 22vw;
+  width: 10.5vw;
+  z-index: 3;
+}
+.pic25{
+  position: absolute;
+  margin-left: 0vw;
+  margin-top: 18vw;
+  width: 14.7vw;
+  z-index: 2;
+}
+.pic26{
+  position: absolute;
+  margin-left: -1vw;
+  margin-top: 13vw;
+  width: 12vw;
+  z-index: 1;
+}
+.text11{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 75vw;
+  line-height: 1.2vw;
+  margin-top: 16.7vw;
+  z-index: 10;
+}
+.text12{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 90.7vw;
+  line-height: 1.2vw;
+  margin-top: 40.5vw;
+  z-index: 10;
+}
+.text13{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 70vw;
+  line-height: 1.2vw;
+  margin-top: 54.7vw;
+  z-index: 10;
+}
+.text14{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 39vw;
+  line-height: 1.2vw;
+  margin-top: 53.8vw;
+  z-index: 10;
+}
+.text15{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 5.2vw;
+  line-height: 1.2vw;
+  margin-top: 37.8vw;
+  z-index: 10;
+}
+.text16{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #323144;
+  margin-left: 12vw;
+  line-height: 1.2vw;
+  margin-top: 15vw;
+  z-index: 10;
+}
