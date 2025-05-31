@@ -205,7 +205,6 @@ a {
 }
 .banner{
   position: absolute;
-  background-color: aquamarine;
   margin-top: 6vw;
   margin-left: 2.2vw;
   width: 1vw;
@@ -644,4 +643,294 @@ a {
   position: absolute;
   margin-left: 96vw;
   width: 23vw;
+}
+.laptop{
+  position: absolute;
+  margin-left: -4vw;
+  margin-top: 8vw;
+  width: 40vw;
+  height: 30vw;
+}
+.lap{
+  position: absolute;
+  width: 26vw;
+}
+.lap1{
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 2vw;
+  width: 26vw;
+}
+.lap2{
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 4vw;
+  width: 26vw;
+}
+.lap3{
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 6vw;
+  width: 26vw;
+}
+.lap4{
+  position: absolute;
+  margin-left: 12vw;
+  margin-top: 8vw;
+  width: 28vw;
+}
+.lap5{
+  position: absolute;
+  margin-left: 15vw;
+  margin-top: 10vw;
+  width: 28vw;
+}
+.lap6{
+  position: absolute;
+  margin-left: 18vw;
+  margin-top: 12vw;
+  width: 28vw;
+}
+.lap7{
+  position: absolute;
+  margin-left: 21vw;
+  margin-top: 14vw;
+  width: 28vw;
+}
+.lap8{
+  position: absolute;
+  margin-left: 18vw;
+  margin-top: 17vw;
+  width: 28vw;
+}
+.lap9{
+  position: absolute;
+  margin-left: 15vw;
+  margin-top: 20vw;
+  width: 28vw;
+}
+.lap10{
+  position: absolute;
+  margin-left: 12vw;
+  margin-top: 23vw;
+  width: 28vw;
+}
+.lap11{
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 26vw;
+  width: 28vw;
+}
+.lap12{
+  position: absolute;
+  margin-left: 6vw;
+  margin-top: 29vw;
+  width: 28vw;
+}
+.lap13{
+  position: absolute;
+  margin-left: 3vw;
+  margin-top: 32vw;
+  width: 28vw;
+}
+.lap14{
+  position: absolute;
+  margin-left: 13vw;
+  margin-top: 30vw;
+  width: 28vw;
+}
+.lap15{
+  position: absolute;
+  margin-left: 16vw;
+  margin-top: 28vw;
+  width: 28vw;
+}
+.lap16{
+  position: absolute;
+  margin-left: 19vw;
+  margin-top: 26vw;
+  width: 28vw;
+}
+.lap17{
+  position: absolute;
+  margin-left: 22vw;
+  margin-top: 24vw;
+  width: 28vw;
+}
+.lap18{
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 22vw;
+  width: 28vw;
+}
+.lap19{
+  position: absolute;
+  margin-left: 28vw;
+  margin-top: 20vw;
+  width: 28vw;
+}
+.lap20{
+  position: absolute;
+  margin-left: 31vw;
+  margin-top: 18vw;
+  width: 28vw;
+}
+.lap21{
+  position: absolute;
+  margin-left: 34vw;
+  margin-top: 16vw;
+  width: 28vw;
+}
+.lap22{
+  position: absolute;
+  margin-left: 37vw;
+  margin-top: 14vw;
+  width: 28vw;
+}
+.lap23{
+  position: absolute;
+  margin-left: 40vw;
+  margin-top: 12vw;
+  width: 28vw;
+}
+.lap24{
+  position: absolute;
+  margin-left: 45vw;
+  margin-top: 9vw;
+  width: 28vw;
+}
+.lap25{
+  position: absolute;
+  margin-left: 49vw;
+  margin-top: 12vw;
+  width: 28vw;
+}
+.lap26{
+  position: absolute;
+  margin-left: 53vw;
+  margin-top: 15vw;
+  width: 28vw;
+}
+.lap27{
+  position: absolute;
+  margin-left: 57vw;
+  margin-top: 18vw;
+  width: 28vw;
+}
+.lap28{
+  position: absolute;
+  margin-left: 61vw;
+  margin-top: 21vw;
+  width: 28vw;
+}
+.lap29{
+  position: absolute;
+  margin-left: 65vw;
+  margin-top: 24vw;
+  width: 28vw;
+}
+.lap30{
+  position: absolute;
+  margin-left: 69vw;
+  margin-top: 27vw;
+  width: 28vw;
+}
+.lap31{
+  position: absolute;
+  margin-left: 73vw;
+  margin-top: 31vw;
+  width: 28vw;
+}
+.lap32{
+  position: absolute;
+  margin-left: 80vw;
+  margin-top: 29vw;
+  width: 28vw;
+}
+.lap33{
+  position: absolute;
+  margin-left: 83vw;
+  margin-top: 27vw;
+  width: 28vw;
+}
+.lap34{
+  position: absolute;
+  margin-left: 86vw;
+  margin-top: 25vw;
+  width: 28vw;
+}
+.lap35{
+  position: absolute;
+  margin-left: 89vw;
+  margin-top: 23vw;
+  width: 28vw;
+}
+.lap36{
+  position: absolute;
+  margin-left: 92vw;
+  margin-top: 21vw;
+  width: 28vw;
+}
+.lap37{
+  position: absolute;
+  margin-left: 95vw;
+  margin-top: 19vw;
+  width: 28vw;
+}
+.lap38{
+  position: absolute;
+  margin-left: 98vw;
+  margin-top: 16vw;
+  width: 28vw;
+}
+.lap39 {
+  position: absolute;
+  margin-left: 101vw;
+  margin-top: 13vw;
+  width: 28vw;
+}
+.text6{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-left: 23vw;
+  line-height: 1.2vw;
+  margin-top: 8vw;
+}
+.text7{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-left: 37vw;
+  line-height: 1.2vw;
+  margin-top: 16vw;
+}
+.text8{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-left: 40.7vw;
+  line-height: 1.2vw;
+  margin-top: 50.5vw;
+}
+.text9{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-left: 56vw;
+  line-height: 1.2vw;
+  margin-top: 46.5vw;
+}
+.text10{
+  position: absolute;
+  font-size: 1.1vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-left: 83vw;
+  line-height: 1.2vw;
+  margin-top: 21.7vw;
 }
