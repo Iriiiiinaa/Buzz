@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const images = document.querySelectorAll('.picture1 img');
   const appearDelay = 150; // Задержка между появлением картинок (мс)
+  const pauseAfterAllShown = 1500; // Пауза после показа всех картинок (мс)
 
   // Соответствие класса картинки -> класса текста
   const textMap = {
@@ -12,21 +13,29 @@ document.addEventListener("DOMContentLoaded", () => {
     'pic26': 'text16'
   };
 
-  // Скрываем все изображения и тексты вначале
-  images.forEach(img => {
-    img.style.display = 'none';
-  });
-
-  Object.values(textMap).forEach(textClass => {
-    const els = document.querySelectorAll(`.${textClass}`);
-    els.forEach(el => {
-      el.style.display = 'none';
+  // Функция скрыть все картинки и тексты
+  function hideAll() {
+    images.forEach(img => {
+      img.style.display = 'none';
     });
-  });
+    Object.values(textMap).forEach(textClass => {
+      const els = document.querySelectorAll(`.${textClass}`);
+      els.forEach(el => {
+        el.style.display = 'none';
+      });
+    });
+  }
 
   // Функция для постепенного показа изображений и текста
   function showImagesSequentially(index = 0) {
-    if (index >= images.length) return; // все показаны
+    if (index >= images.length) {
+      // Все показаны, ждем паузу, потом скрываем и запускаем заново
+      setTimeout(() => {
+        hideAll();
+        showImagesSequentially(0);
+      }, pauseAfterAllShown);
+      return;
+    }
 
     const img = images[index];
     img.style.display = 'block';
@@ -52,5 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }, appearDelay);
   }
 
+  // Начинаем цикл
+  hideAll();
   showImagesSequentially();
 });

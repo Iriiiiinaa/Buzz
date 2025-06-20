@@ -11,3 +11,10 @@
     font-style: bold;
     font-weight: bold;
 }
+
+@font-face {
+    font-family: "Arimo-bold";
+    src: url("../fonts/Arimo-Bold.ttf");
+    font-style: bold;
+    font-weight: bold;
+}
