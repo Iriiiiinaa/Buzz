@@ -98,8 +98,8 @@ a {
   transform-origin: left;
 }
 #letter32 {
-  top: -1.3vw; /* Прижимаем к верхнему краю */
-  transform-origin: top; /*  верхняя граница */
+  top: -1.3vw; 
+  transform-origin: top; 
   transform-origin: left;
 }
 .screen {
@@ -164,7 +164,7 @@ a {
 .poster-container {
   position: absolute;
   width: 15vw;
-  height: 163vw; /* высота видимой области */
+  height: 163vw;
   overflow: hidden;
   margin-left: 65.7vw;
 }
@@ -173,7 +173,7 @@ a {
   top: 0;
   left: 0;
   width: 15vw;
-  height: 300vw; /* две группы по 150vw */
+  height: 300vw;
 }
 .poster {
   position: absolute;
@@ -251,13 +251,12 @@ a {
   z-index: 10; 
 }
 
-/* Стили для дубликатов */
 .clonne {
   position: absolute;
   width: 32vw;
   opacity: 1;
-  pointer-events: none; /* чтобы не мешать наведению */
-  transition: opacity 0.3s ease; /* время анимации */
+  pointer-events: none; 
+  transition: opacity 0.3s ease; 
 }
 .time{
   position: absolute;
@@ -1314,7 +1313,7 @@ a {
   height: 12.8vw;
   z-index: 5;
 }
-/* Расположение элементов задается через top, а не margin-top */
+
 .shop1 { top: -111vw; }
 .shop2 { top: -97vw; }
 .shop3 { top: -83vw; }
@@ -1655,15 +1654,15 @@ textarea:focus {
   z-index: 29;
 }
 .immg img, .immmg img {
-  opacity: 0; /* Скрываем все картинки изначально */
+  opacity: 0;
 }
 
 .immg img.visible, .immmg img.visible {
-  opacity: 1; /* Делаем картинку видимой */
+  opacity: 1; 
 }
 
 .immg img.hidden, .immmg img.hidden {
-  opacity: 0; /* Скрываем картинку */
+  opacity: 0; 
 }
 .instructions{
   position: absolute;
@@ -1677,6 +1676,7 @@ textarea:focus {
   height: 20vw;
   margin-top: 28.5vw;
   margin-left: 2.4vw;
+  cursor: pointer;
 }
 .text22 {
   position: absolute;
@@ -1713,42 +1713,50 @@ textarea:focus {
   width: 48vw;
   margin-top: 11.5vw;
   margin-left: 9.9vw;
+  z-index: 1;
 }
 .book2{
   position: absolute;
   width: 22.5vw;
   margin-top: 34vw;
   margin-left: 2vw;
+  z-index: 5;
 }
 .book3{
   position: absolute;
   width: 14vw;
   margin-top: 3vw;
   margin-left: 30vw;
+  z-index: 5;
 }
 .book4{
   position: absolute;
   width: 13vw;
   margin-top: 14vw;
   margin-left: 52vw;
+  z-index: 5;
 }
 .book5{
   position: absolute;
   width: 13vw;
   margin-top: 12vw;
   margin-left: 54vw;
+  z-index: 5;
 }
 .book6{
   position: absolute;
   width: 13vw;
   margin-top: 10vw;
   margin-left: 56vw;
+  z-index: 7;
 }
 .book7{
   position: absolute;
   width: 3.5vw;
   margin-top: 13.8vw;
   margin-left: 47.5vw;
+  z-index: 3;
+  cursor: pointer;
 }
 .paragraph2{
   position: absolute;
@@ -1756,6 +1764,7 @@ textarea:focus {
   height: 20vw;
   margin-top: 52vw;
   margin-left: 2.4vw;
+  cursor: pointer;
 }
 .paragraph3{
   position: absolute;
@@ -1764,6 +1773,7 @@ textarea:focus {
   margin-top: 75.5vw;
   margin-left: 2.4vw;
   z-index: 2;
+  cursor: pointer;
 }
 .paragraph4{
   position: absolute;
@@ -1772,6 +1782,7 @@ textarea:focus {
   margin-top: 99vw;
   margin-left: 2.4vw;
   z-index: 2;
+  cursor: pointer;
 }
 .paragraph5{
   position: absolute;
@@ -1780,6 +1791,7 @@ textarea:focus {
   margin-top: 122.5vw;
   margin-left: 2.4vw;
   z-index: 2;
+  cursor: pointer;
 }
 .text25 {
   position: absolute;
@@ -1809,7 +1821,7 @@ textarea:focus {
   width: 15vw;
   margin-top: 5vw;
   margin-left: 0vw;
-  z-index: 6;
+  z-index: 10;
 }
 .book10{
   position: absolute;
@@ -1837,14 +1849,14 @@ textarea:focus {
   width: 20vw;
   margin-top: 42vw;
   margin-left: 2vw;
-  z-index: 4;
+  z-index: 10;
 }
 .book14{
   position: absolute;
   width: 15vw;
   margin-top: 7vw;
   margin-left: 47vw;
-  z-index: 4;
+  z-index: 10;
 }
 .book15{
   position: absolute;
@@ -1879,14 +1891,16 @@ textarea:focus {
   width: 9vw;
   margin-top: 7.5vw;
   margin-left: 19.5vw;
-  z-index: 5;
+  z-index: 2;
+  cursor: pointer;
 }
 .book20{
   position: absolute;
   width: 10.5vw;
   margin-top: 12vw;
   margin-left: 43vw;
-  z-index: 5;
+  z-index: 12;
+  cursor: pointer;
 }
 .book21{
   position: absolute;
@@ -1900,7 +1914,7 @@ textarea:focus {
   width: 20vw;
   margin-top: 52vw;
   margin-left: 38vw;
-  z-index: 5;
+  z-index: 10;
 }
 .book23{
   position: absolute;
@@ -1908,6 +1922,7 @@ textarea:focus {
   margin-top: 51.5vw;
   margin-left: 58vw;
   z-index: 5;
+  cursor: pointer;
 }
 .bookk2{
   position: absolute;
@@ -1923,7 +1938,7 @@ textarea:focus {
   width: 18vw;
   margin-top: 14vw;
   margin-left: 18vw;
-  z-index: 7;
+  z-index: 10;
 }
 .book25{
   position: absolute;
@@ -1959,4 +1974,8 @@ textarea:focus {
   margin-top: 1.8vw;
   margin-left: 3.2vw;
   z-index: 10;
+  cursor: pointer;
+}
+.ccloone { 
+  pointer-events: none;
 }

@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', () => {
   const letter1 = document.getElementById('letter1');
   const letter2 = document.getElementById('letter2');
@@ -11,11 +12,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const letter9 = document.getElementById('letter9');
   const letter10 = document.getElementById('letter10');
   const letter11 = document.getElementById('letter11');
-  const image2 = document.getElementById('screen2'); // Добавлено
+  const image2 = document.getElementById('screen2');
 
-  const initialDistanceVW = 0.2;
-  const image1DistanceVW = 0.2;
-  const image2DistanceVW = 0.2;
+  const initialDistanceVW = 0.2; 
+  const image1DistanceVW = 0.2; 
+  const image2DistanceVW = 0.2; 
+
+  const animationDuration = 7000; 
+  const startDelay = 50; 
 
   const elements = {
     letter1: { element: letter1, initialWidthVW: 0, scale: 0 },
@@ -25,49 +29,49 @@ document.addEventListener('DOMContentLoaded', () => {
     letter5: { element: letter5, initialWidthVW: 0, scale: 0 },
     letter6: { element: letter6, initialWidthVW: 0, scale: 0 },
     letter7: { element: letter7, initialWidthVW: 0, scale: 0 },
-    image1: { element: image1, initialWidthVW: 0, scale: 1 }, // scale: 1 означает, что не масштабируем
+    image1: { element: image1, initialWidthVW: 0, scale: 1 },
     letter8: { element: letter8, initialWidthVW: 0, scale: 0 },
     letter9: { element: letter9, initialWidthVW: 0, scale: 0 },
     letter10: { element: letter10, initialWidthVW: 0, scale: 0 },
     letter11: { element: letter11, initialWidthVW: 0, scale: 0 },
-    image2: { element: image2, initialWidthVW: 0, scale: 1 } // scale: 1 означает, что не масштабируем
+    image2: { element: image2, initialWidthVW: 0, scale: 1 }
   };
 
-  let animationProgress = 0;
-  const animationDuration = 7000;
+  const getElementWidthInVW = (element) => {
+    return parseFloat(getComputedStyle(element).width) / document.documentElement.clientWidth * 100;
+  };
 
   setTimeout(() => {
-    // Получаем начальные размеры
     for (const key in elements) {
-      elements[key].initialWidthVW = parseFloat(getComputedStyle(elements[key].element).width) / document.documentElement.clientWidth * 100;
+      elements[key].initialWidthVW = getElementWidthInVW(elements[key].element);
     }
 
-    // Устанавливаем начальное положение элементов
-    let currentLeft = 0;
-    for (const key in elements) {
-      if (key === 'letter1') {
-        continue; // letter1 остается в позиции 0
+    const setInitialPositions = () => {
+      let currentLeft = 0;
+
+      for (const key in elements) {
+        if (key === 'letter1') continue;
+
+        let distance = initialDistanceVW;
+        if (key === 'image1') distance = image1DistanceVW;
+        else if (key === 'image2') distance = image2DistanceVW;
+
+        const prevKey = Object.keys(elements)[Object.keys(elements).indexOf(key) - 1];
+        const previousElement = elements[prevKey].element;
+
+        currentLeft += getElementWidthInVW(previousElement) * elements[prevKey].scale + distance;
+        elements[key].element.style.left = `${currentLeft}vw`;
       }
+    };
 
-      let distance = initialDistanceVW;
-      if (key === 'image1') {
-        distance = image1DistanceVW;
-      } else if (key === 'image2') {
-         distance = image2DistanceVW;
-      }
+    setInitialPositions();
 
-      currentLeft += elements[key === 'image1' ? 'letter7' : (key === 'image2' ? 'letter11' : Object.keys(elements)[Object.keys(elements).indexOf(key) - 1])].initialWidthVW + distance;
-      elements[key].element.style.left = `${currentLeft}vw`;
-    }
+    let animationProgress = 0;
 
-    function animate() {
-      animationProgress += 16 / animationDuration;
+    const animate = () => {
+      animationProgress += 16 / animationDuration; 
+      if (animationProgress > 1) animationProgress = 0; 
 
-      if (animationProgress > 1) {
-        animationProgress = 0;
-      }
-
-      // Определяем scale для каждой буквы.
       elements.letter1.scale = 0.2 + (Math.sin(animationProgress * Math.PI) * 0.2);
       elements.letter2.scale = 0.3 - (Math.sin(animationProgress * Math.PI) * 0.2);
       elements.letter3.scale = 0.1 - (Math.sin(animationProgress * Math.PI) * 0.1);
@@ -80,36 +84,31 @@ document.addEventListener('DOMContentLoaded', () => {
       elements.letter10.scale = 0.1 + (Math.sin(animationProgress * Math.PI) * 0.4);
       elements.letter11.scale = 0.48 - (Math.sin(animationProgress * Math.PI) * 0.48);
 
-
-      // Применяем transform
       for (const key in elements) {
-        if (key !== 'image1' && key !== 'image2'){
-             elements[key].element.style.transform = `scaleX(${elements[key].scale})`;
+        if (key !== 'image1' && key !== 'image2') {
+          elements[key].element.style.transform = `scaleX(${elements[key].scale})`;
         }
       }
 
-      // Обновляем позицию элементов
-      currentLeft = 0;
+      let currentLeft = 0;
 
       for (const key in elements) {
-        if (key === 'letter1') {
-          continue; // letter1 остается в позиции 0
-        }
-                let distance = initialDistanceVW;
-        if (key === 'image1') {
-          distance = image1DistanceVW;
-        } else if (key === 'image2') {
-          distance = image2DistanceVW;
-        }
+        if (key === 'letter1') continue;
 
-        const previousKey = key === 'image1' ? 'letter7' : (key === 'image2' ? 'letter11' : Object.keys(elements)[Object.keys(elements).indexOf(key) - 1]);
-        currentLeft += elements[previousKey].initialWidthVW * elements[previousKey].scale + distance;
+        let distance = initialDistanceVW;
+        if (key === 'image1') distance = image1DistanceVW;
+        else if (key === 'image2') distance = image2DistanceVW;
+
+        const prevKey = Object.keys(elements)[Object.keys(elements).indexOf(key) - 1];
+        const previousElement = elements[prevKey].element;
+
+        currentLeft += getElementWidthInVW(previousElement) * elements[prevKey].scale + distance;
         elements[key].element.style.left = `${currentLeft}vw`;
       }
 
       requestAnimationFrame(animate);
-    }
+    };
 
     animate();
-  }, 50);
+  }, startDelay);
 });

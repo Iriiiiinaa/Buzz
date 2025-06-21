@@ -24,7 +24,6 @@ function animateShop() {
     'shop32': 99
   };
 
-  // Функция для обработки наведения
   function handleShopHover(shopElement, shhopElement) {
     shopElement.addEventListener('mouseenter', () => {
       shhopElement.style.display = 'block';
@@ -50,7 +49,6 @@ function animateShop() {
     }
   });
 
-  // Создаем объект для быстрого поиска следующего элемента
   const nextShopMap = {
     17: 18, 18: 19, 19: 20, 20: 21, 21: 22, 22: 23, 23: 24, 24: 25,
     25: 26, 26: 27, 27: 28, 28: 29, 29: 30, 30: 31, 31: 32, 32: 17
@@ -61,7 +59,6 @@ function animateShop() {
     const currentItemNumber = parseInt(item.className.replace('shop', ''));
     const nextItemNumber = nextShopMap[currentItemNumber];
 
-    // Находим следующий элемент по номеру, используя селектор
     const nextElement = document.querySelector(`.shop${nextItemNumber}`);
 
     if (!nextElement) {
@@ -88,14 +85,13 @@ function animateShop() {
   shopItems.forEach(item => {
     const currentClass = item.className.split(' ')[0];
     item.style.top = `${initialTops[currentClass]}vw`;
-    item.style.willChange = 'top'; // Подсказываем браузеру, что top будет анимироваться
-    item.style.transform = 'translateZ(0)'; // Аппаратное ускорение (экспериментально)
+    item.style.willChange = 'top'; 
+    item.style.transform = 'translateZ(0)';
   });
 
   animate();
 }
 
-// Маскировка текста в textarea
 function maskTextarea() {
   const normalTextarea = document.getElementById("normalTextarea");
   const maskedTextarea = document.getElementById("maskedTextarea");
@@ -112,7 +108,6 @@ function maskTextarea() {
   });
 }
 
-// Анимация картинок
 function animateImages() {
   const images1 = document.querySelectorAll('.immg img');
   const images2 = document.querySelectorAll('.immmg img');
@@ -152,7 +147,6 @@ function animateImages() {
   animate();
 }
 
-// Вызываем все функции после загрузки DOM
 document.addEventListener("DOMContentLoaded", () => {
   animateShop();
   maskTextarea();

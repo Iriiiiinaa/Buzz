@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const disappearDelay = 250;        
   const visibleTime = 500;          
 
-  // Словарь соответствия класса картинки -> класс текста
   const textMap = {
     'lap': 'text6',
     'lap4': 'text7',
@@ -14,7 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
     'lap39': 'text10'
   };
 
-  // Скрываем все тексты из textMap вначале
   Object.values(textMap).forEach(textClass => {
     const els = document.querySelectorAll(`.${textClass}`);
     els.forEach(el => el.style.display = 'none');
@@ -36,7 +34,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = images[index];
     img.style.display = 'block';
 
-    // Определяем, какой текст показывать, по классам картинки
     let textClassToShow = null;
     for (const key in textMap) {
       if (img.classList.contains(key)) {
@@ -45,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     }
 
-    // Показываем текст с нужным классом
     if (textClassToShow) {
       const textEls = document.querySelectorAll(`.${textClassToShow}`);
       textEls.forEach(el => el.style.display = 'block');
@@ -60,7 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const img = images[index];
     img.style.display = 'none';
 
-    // Скрываем текст с соответствующим классом
     let textClassToHide = null;
     for (const key in textMap) {
       if (img.classList.contains(key)) {

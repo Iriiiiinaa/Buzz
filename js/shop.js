@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", () => {
   const linn = document.querySelector('.linn');
   const linn1 = document.querySelector('.linn1');
-  const linnn2 = document.querySelector('.linnn2'); // Получаем ссылку на linnn2
-  const immg = document.querySelector('.immg'); // Получаем ссылку на immg
-  const immmg = document.querySelector('.immmg'); // Получаем ссылку на immmg
+  const linnn2 = document.querySelector('.linnn2');
+  const immg = document.querySelector('.immg');
+  const immmg = document.querySelector('.immmg');
   const account = document.querySelector('.account');
   const shopItems = Array.from(document.querySelectorAll('.shop1, .shop2, .shop3, .shop4, .shop5, .shop6, .shop7, .shop8, .shop9, .shop10, .shop11, .shop12, .shop13, .shop14, .shop15, .shop16'));
-  const itemHeight = 14; // Приблизительная высота одного элемента .shop (в vw)
-  const speed = -0.04; // Скорость движения (Отрицательное значение для движения вверх)
+  const itemHeight = 14; 
+  const speed = -0.04; 
 
-  // Функция для обработки наведения
   function handleShopHover(shopElement, shhopElement) {
     shopElement.addEventListener('mouseenter', () => {
       shhopElement.style.display = 'block';
@@ -26,17 +25,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Инициализация обработчиков наведения для всех элементов
   const shopElements = document.querySelectorAll('[class^="shop"]');
   shopElements.forEach(shopElement => {
-    const shopNumber = shopElement.className.match(/shop(\d+)/)[1];  // Извлекаем номер из класса (shop1, shop2, ...)
+    const shopNumber = shopElement.className.match(/shop(\d+)/)[1]; 
     const shhopElement = document.querySelector(`.shhop${shopNumber}`);
     if (shhopElement) {
       handleShopHover(shopElement, shhopElement);
     }
   });
 
-  // Сохраняем начальные значения top
   const initialTops = {
     'shop1': -111,
     'shop2': -97,
@@ -64,7 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
       nextItemNumber = 1;
     }
 
-    //Найдем индекс следующего элемента:
     let nextElementIndex = shopItems.findIndex(item => item.classList.contains('shop' + nextItemNumber));
 
     if (nextElementIndex === -1) {
@@ -90,7 +86,6 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(animate);
   }
 
-  // Инициализация начального положения элементов
   shopItems.forEach(item => {
     const currentClass = item.className.split(' ')[0];
     item.style.top = `${initialTops[currentClass]}vw`;
@@ -102,21 +97,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   clikElements.forEach(clikElement => {
     clikElement.addEventListener('click', () => {
-      // Скрываем .linn и .linn1
       linn.style.display = 'none';
       linn1.style.display = 'none';
 
-      // Показываем .account, .linnn2, .immg и .immmg
       account.style.display = 'block';
-      linnn2.style.display = 'block'; // Показываем linnn2
-      immg.style.display = 'block';   // Показываем immg
-      immmg.style.display = 'block';  // Показываем immmg
+      linnn2.style.display = 'block';
+      immg.style.display = 'block';
+      immmg.style.display = 'block';
     });
   });
 
-  // Изначально скрываем .account, .linnn2, .immg и .immmg
   account.style.display = 'none';
-  linnn2.style.display = 'none'; // Скрываем linnn2
-  immg.style.display = 'none';   // Скрываем immg
-  immmg.style.display = 'none';  // Скрываем immmg
+  linnn2.style.display = 'none'; 
+  immg.style.display = 'none';
+  immmg.style.display = 'none'; 
 });
