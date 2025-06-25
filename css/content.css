@@ -3,16 +3,141 @@
   width: 100vw;
   height: 16vw;
   margin-top: 4.5vw;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
-.bur{
+#bur{
   position: absolute;
-  background-color: rgb(119, 0, 255);
+  display: none;
   width: 15vw;
   height: 8vw;
   z-index: 10;
-  margin-top: 3vw;
+  margin-top: 2.5vw;
   margin-left: 75vw;
+}
+.navig3 {
+  position: absolute;
+  font-size: 4.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-top: 10vw;
+  margin-left: 1.9vw;
+}
+.navig31 {
+  position: absolute;
+  font-size: 4.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-top: 16vw;
+  margin-left: 1.9vw;
+}
+.navig32 {
+  position: absolute;
+  font-size: 4.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-top: 22vw;
+  margin-left: 1.9vw;
+}
+.polotno{
+  position: absolute;
+  background-color: #FE6807;
+  z-index: 50;
+  width: 100vw;
+  height: 80vw;
+  display: none;
+}
+.navig33 {
+  position: absolute;
+  font-size: 4.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-top: 28vw;
+  margin-left: 1.9vw;
+}
+.navig34 {
+  position: absolute;
+  font-size: 4.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  margin-top: 34vw;
+  margin-left: 1.9vw;
+}
+.bur1{
+  position: absolute;
+  background-color: #323144;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 0vw;
+}
+.bur2{
+   position: absolute;
+  background-color: #323144;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 2.4vw;
+}
+.bur3{
+   position: absolute;
+  background-color: #323144;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 4.8vw;
+}
+.bur4{
+  position: absolute;
+  background-color: #323144;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 7.2vw;
+}
+.bur5{
+  position: absolute;
+  background-color: #FE6807;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 0vw;
+}
+.bur6{
+   position: absolute;
+  background-color: #FE6807;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 2.4vw;
+}
+.bur7{
+   position: absolute;
+  background-color:#FE6807;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 4.8vw;
+}
+.bur8{
+  position: absolute;
+  background-color: #FE6807;
+  width: 100%;
+  height: 1.2vw;
+  margin-top: 7.2vw;
+}
+#burg{
+  position: absolute;
+  display: none;
+  background-color: #323144;
+  width: 31vw;
+  height: 42vw;
+  margin-top: 7.2vw;
+  margin-left: 59vw;
+}
+#burg1{
+  position: absolute;
+  display: none;
+  background-color: #323144;
+  width: 31vw;
+  height: 42vw;
+  margin-top: 7.2vw;
+  margin-left: 59vw;
+}
+#burg.show {
+  display: block; /* Показываем при наличии класса 'show' */
 }
 .letter {
   position: absolute;
@@ -128,14 +253,14 @@ a {
   height: 16vw;
   width: 100vw;
   margin-top: 21.57vw;
-  margin-left: 2vw;
+  margin-left: 1vw;
 }
 .liner3 {
   position: absolute;
   width: 100vw;
   height: 16vw;
   margin-top: 38.5vw;
-  margin-left: 2.2vw;
+  margin-left: 1vw;
 }
 .navigation{
   position: fixed; 
@@ -148,6 +273,8 @@ a {
   position: absolute;
   width: 8vw;
   z-index: 2;
+  margin-top: 0vw;
+  margin-left: 0vw;
 }
 .log img{
   width: 8vw;
@@ -454,6 +581,14 @@ a {
   margin-left: 73.5vw;
   line-height: 1.2vw;
   margin-top: 22vw;
+}
+.four{
+  position: absolute;
+  background-color: #323144;
+  width: 100vw;
+  height: 80vw;
+  margin-left: 20vw;
+  display: none;
 }
 .picture{
   position: absolute;
@@ -1709,6 +1844,15 @@ textarea:focus {
   line-height: 1.5vw;
   margin-top: 4vw;
 }
+.text244 {
+  position: absolute;
+  margin-left: 2.5vw;
+  font-size: 1.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  line-height: 1.5vw;
+  margin-top: 4vw;
+}
 .bookk{
   position: absolute;
   width: 68vw;
@@ -1802,6 +1946,15 @@ textarea:focus {
   cursor: pointer;
 }
 .text25 {
+  position: absolute;
+  margin-left: 2.5vw;
+  font-size: 1.3vw;
+  font-family: 'Arimo-Regular';
+  color: #FE6807;
+  line-height: 1.5vw;
+  margin-top: 5.5vw;
+}
+.text255 {
   position: absolute;
   margin-left: 2.5vw;
   font-size: 1.3vw;
