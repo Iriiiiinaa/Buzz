@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }) {
     const book = document.querySelector(bookSelector);
     if (!book) {
-      console.warn(`Книга с селектором "${bookSelector}" не найдена.`);
+      console.warn(`Книга "${bookSelector}" не найдена.`);
       return;
     }
 
     const originalImg = book.querySelector(originalImgSelector);
     if (!originalImg) {
-      console.warn(`Оригинальное изображение с селектором "${originalImgSelector}" не найдено в "${bookSelector}".`);
+      console.warn(`изображение "${originalImgSelector}" не найдено в "${bookSelector}".`);
       return;
     }
 
