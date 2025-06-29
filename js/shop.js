@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const immmg = document.querySelector('.immmg');
   const account = document.querySelector('.account');
   const shopItems = Array.from(document.querySelectorAll('.shop1, .shop2, .shop3, .shop4, .shop5, .shop6, .shop7, .shop8, .shop9, .shop10, .shop11, .shop12, .shop13, .shop14, .shop15, .shop16'));
-  const itemHeight = 14; 
+  const itemHeight = 14;
   const speed = -0.04; 
 
   function handleShopHover(shopElement, shhopElement) {
@@ -27,31 +27,39 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const shopElements = document.querySelectorAll('[class^="shop"]');
   shopElements.forEach(shopElement => {
-    const shopNumber = shopElement.className.match(/shop(\d+)/)[1]; 
+    const shopNumber = shopElement.className.match(/shop(\d+)/)[1];
     const shhopElement = document.querySelector(`.shhop${shopNumber}`);
     if (shhopElement) {
       handleShopHover(shopElement, shhopElement);
     }
   });
 
-  const initialTops = {
-    'shop1': -111,
-    'shop2': -97,
-    'shop3': -83,
-    'shop4': -69,
-    'shop5': -55,
-    'shop6': -41,
-    'shop7': -27,
-    'shop8': -13,
-    'shop9': 1,
-    'shop10': 15,
-    'shop11': 29,
-    'shop12': 43,
-    'shop13': 57,
-    'shop14': 71,
-    'shop15': 85,
-    'shop16': 99
-  };
+  function getCssVariable(variableName) {
+    return parseFloat(getComputedStyle(document.documentElement).getPropertyValue(variableName));
+  }
+
+  let initialTops = {}; 
+
+  function updateInitialTops() {
+    initialTops = {
+      'shop1': getCssVariable('--shop1-top'),
+      'shop2': getCssVariable('--shop2-top'),
+      'shop3': getCssVariable('--shop3-top'),
+      'shop4': getCssVariable('--shop4-top'),
+      'shop5': getCssVariable('--shop5-top'),
+      'shop6': getCssVariable('--shop6-top'),
+      'shop7': getCssVariable('--shop7-top'),
+      'shop8': getCssVariable('--shop8-top'),
+      'shop9': getCssVariable('--shop9-top'),
+      'shop10': getCssVariable('--shop10-top'),
+      'shop11': getCssVariable('--shop11-top'),
+      'shop12': getCssVariable('--shop12-top'),
+      'shop13': getCssVariable('--shop13-top'),
+      'shop14': getCssVariable('--shop14-top'),
+      'shop15': getCssVariable('--shop15-top'),
+      'shop16': getCssVariable('--shop16-top')
+    };
+  }
 
   function resetShopItem(item) {
     let newTop;
@@ -86,9 +94,18 @@ document.addEventListener("DOMContentLoaded", () => {
     requestAnimationFrame(animate);
   }
 
-  shopItems.forEach(item => {
-    const currentClass = item.className.split(' ')[0];
-    item.style.top = `${initialTops[currentClass]}vw`;
+  function setInitialPositions() {
+    updateInitialTops(); 
+    shopItems.forEach(item => {
+      const currentClass = item.className.split(' ')[0];
+      item.style.top = `${initialTops[currentClass]}vw`;
+    });
+  }
+
+  setInitialPositions();
+
+  window.addEventListener('resize', () => {
+    setInitialPositions();
   });
 
   animate();
@@ -108,7 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   account.style.display = 'none';
-  linnn2.style.display = 'none'; 
+  linnn2.style.display = 'none';
   immg.style.display = 'none';
-  immmg.style.display = 'none'; 
+  immmg.style.display = 'none';
 });

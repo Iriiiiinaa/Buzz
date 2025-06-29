@@ -1,9 +1,9 @@
 .liner1 {
   position: absolute;
-  width: 100vw;
+  width: 97vw;
   height: 16vw;
   margin-top: 4.5vw;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 #bur{
   position: absolute;
@@ -251,16 +251,17 @@ a {
 .liner2 {
   position: absolute;
   height: 16vw;
-  width: 100vw;
+  width: 97vw;
   margin-top: 21.57vw;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 .liner3 {
   position: absolute;
-  width: 100vw;
-  height: 16vw;
+  width: 97vw;
+  height: 20vw;
+  overflow: hidden;
   margin-top: 38.5vw;
-  margin-left: 1vw;
+  margin-left: 2vw;
 }
 .navigation{
   position: fixed; 
@@ -417,7 +418,6 @@ a {
 .copy img {
   position: absolute;
   width: 11vw;
-
 }
 .copyy {
   left: 0;
@@ -449,6 +449,10 @@ a {
   width: 9vw;
   margin-top: 18.3vw;
   margin-left: 6.6vw;
+}
+.ban9 {
+  position: absolute;
+  display: none;
 }
 .time2 {
   position: absolute;
@@ -510,7 +514,6 @@ a {
 .copy1 img {
   position: absolute;
   width: 11vw;
-
 }
 .copyy1 {
   left: 0;
@@ -540,7 +543,6 @@ a {
 }
 .banner3{
   position: absolute;
-  background-color: aquamarine;
   width: 20vw;
   height: 28vw;
   margin-top: 113vw;
@@ -550,6 +552,10 @@ a {
   position: absolute;
   width: 20vw;
   z-index: 12;
+}
+.bann{
+  position: absolute;
+  display: none;
 }
 .ban8{
   position: absolute;
@@ -563,6 +569,10 @@ a {
   width: 97.5vw;
   margin-top: 7vw;
   margin-left: 1.65vw;
+}
+.gossip1{
+  position: absolute;
+  display: none;
 }
 .text4{
   position: absolute;
@@ -603,7 +613,14 @@ a {
   cursor: pointer;
   z-index: 7;
 }
-
+.sspace1 {
+  position: absolute;
+  margin-left: 0vw;
+}
+.sspace2 {
+  position: absolute;
+  margin-left: 0vw;
+}
 .space1, .space8 {
   margin-top: 0vw;
 }
@@ -744,7 +761,8 @@ a {
   position: absolute;
   margin-top: 97.5vw;
   margin-left: 0vw;
-  width: 105vw;
+  width: 100vw;
+  overflow: hidden;
   height: 16.5vw;
 }
 .duble1{
@@ -812,12 +830,17 @@ a {
   margin-left: 96vw;
   width: 23vw;
 }
+.dduble{
+  position: absolute;
+  display: none;
+}
 .laptop{
   position: absolute;
   margin-left: -4vw;
   margin-top: 8vw;
-  width: 40vw;
-  height: 30vw;
+  width: 104vw;
+  height: 50vw;
+  overflow: hidden;
 }
 .lap{
   position: absolute;
@@ -1397,7 +1420,9 @@ a {
   width: 48vw;
   pointer-events: none;
 }
-
+.pproduct{
+  position: absolute;
+}
 .text17{
   position: absolute;
   font-size: 1.5vw;
@@ -1457,23 +1482,24 @@ a {
   z-index: 5;
 }
 
-.shop1 { top: -111vw; }
-.shop2 { top: -97vw; }
-.shop3 { top: -83vw; }
-.shop4 { top: -69vw; }
-.shop5 { top: -55vw; }
-.shop6 { top: -41vw; }
-.shop7 { top: -27vw; }
-.shop8 { top: -13vw; }
-
-.shop9 { top: 1vw; }
-.shop10 { top: 15vw; }
-.shop11 { top: 29vw; }
-.shop12 { top: 43vw; }
-.shop13 { top: 57vw; }
-.shop14 { top: 71vw; }
-.shop15 { top: 85vw; }
-.shop16 { top: 99vw; }
+:root {
+  --shop1-top: -111vw;
+  --shop2-top: -97vw;
+  --shop3-top: -83vw;
+  --shop4-top: -69vw;
+  --shop5-top: -55vw;
+  --shop6-top: -41vw;
+  --shop7-top: -27vw;
+  --shop8-top: -13vw;
+  --shop9-top: 1vw;
+  --shop10-top: 15vw;
+  --shop11-top: 29vw;
+  --shop12-top: 43vw;
+  --shop13-top: 57vw;
+  --shop14-top: 71vw;
+  --shop15-top: 85vw;
+  --shop16-top: 99vw;
+}
 
 .shop17 { top: -111vw; }
 .shop18 { top: -97vw; }
@@ -1627,6 +1653,12 @@ textarea:focus {
   width: 6vw;
   height: 9vw;
   background-color: #FE6807;
+}
+.immg{
+  position: absolute;
+}
+.immmg{
+  position: absolute;
 }
 .immg1{
   position: absolute;
