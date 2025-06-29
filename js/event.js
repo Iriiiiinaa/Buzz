@@ -153,5 +153,13 @@ setupScrollOnClick(['.poster3'], '.ban7');
 setupScrollOnClick(['.poster6', '.poster7', '.poster8'], '.banner1');
 setupScrollOnClick(['.poster9', '.poster10', '.poster11'], '.ban5');
 setupScrollOnClick(['.poster12', '.poster13', '.poster14'], '.time4');
+
+const timeElements = document.querySelectorAll('.time, .time3, .time4, .time2');
+
+  timeElements.forEach(timeElement => {
+    timeElement.addEventListener('click', () => {
+      window.location.href = '404.html';
+    });
+  });
 });
 

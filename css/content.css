@@ -2172,3 +2172,6 @@ textarea:focus {
 .ccloone { 
   pointer-events: none;
 }
+.time, .time3, .time4, .time2 {
+  cursor: pointer;
+}
